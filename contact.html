@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <link href="https://cdn.bootcss.com/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/Swiper/4.5.0/js/swiper.min.js"></script>
+
+</head>
+
+<style>
+    div,
+    ul,
+    li {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .container {
+        /* width: 1000px; */
+        /* overflow: hidden; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header {
+        background-image: url(./img/combackground.jpg);
+    }
+
+    .header .menu {
+        cursor: pointer;
+        display: flex;
+        align-items: flex-start;
+        list-style: none;
+        height: 50px;
+        padding: 5px 30px;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .header .menu li {
+        display: inline-block;
+        color: black;
+        font-weight: bolder;
+        padding: 0px 20px;
+        text-align: center;
+    }
+
+    .menu .menu-hide {
+        display: none;
+    }
+
+    .menu .active {
+        color: red !important;
+
+    }
+
+    .menu .active .menu-hide {
+        display: block;
+    }
+
+    .menu li:hover {
+        color: red;
+    }
+
+
+    .menu li:hover .menu-hide {
+        display: block;
+    }
+
+    .swiper-container {
+        height: 500px;
+    }
+
+    .swiper-slide {
+        height: 500px;
+    }
+</style>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+
+            <div class="logo">
+                <img src="./img/logo2.png" alt="">
+            </div>
+            <ul class="menu">
+                <a href="./index.html">
+                    <li class="menu-li">
+                        <div>HOME</div>
+                        <div class="menu-hide">首页</div>
+                    </li>
+                </a>
+                <a href="./about.html">
+                    <li class="menu-li">
+                        <div>ABOUT US</div>
+                        <div class="menu-hide">关于我们</div>
+                    </li>
+                </a>
+                <a href="./case.html">
+                    <li class="menu-li">
+                        <div>CASES</div>
+                        <div class="menu-hide">案例</div>
+                    </li>
+                </a>
+                <a href="./contact.html">
+                    <li class="menu-li active">
+                        <div>CONTACT US</div>
+                        <div class="menu-hide">联系我们</div>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/banner1.png" alt=""></div>
+            <div class="swiper-slide"><img src="./img/banner2.jpg" alt=""></div>
+        </div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+
+    </div>
+    <div style="background-image:url(./img/combackground.jpg)">
+        <div class="container">
+
+
+            <style type="text/css">
+                .address_left {
+                    width: 380px;
+                }
+
+                .branch {
+                    float: left;
+                    width: 100%;
+                    line-height: 25px;
+                    margin-bottom: 20px;
+                    color: #999;
+                }
+
+                /*.img{*/
+                /*background:url(./img/img.png)   no-repeat;*/
+                /*zoom:0.3;*/
+                /*-moz-transform: scale(0.3);*/
+                /*-moz-transform-origin:top left;*/
+                /*}*/
+            </style>
+            <div>
+                <div class="content" style="display:flex;">
+                    <div class="address_left">
+                        <div class="branch">
+                            <h5 style="color: #000;font-size: 18px;font-weight: 900;margin-bottom: 20px">上海竞胜展览服务有限公司
+                            </h5>
+                            <p> <img style="width: 20px;margin-left: 3px;" src="./img/img_local.png"></img>
+                                上海市浦东新区姚林路18号环球广场A座1109室</p>
+                            <p> <img style="width: 25px;" src="./img/img_phone.png"></img> T. 021-50310286/50310587</p>
+                            <p> <img style="width: 25px;" src="./img/img_email.png"></img> F. 021-58990900</p>
+                            <p> <img style="width: 25px;" src="./img/img_qq.png"></img> E. 1139745342@qq.com</p>
+                        </div>
+                    </div>
+                    <div class="china_map">
+                        <img style="width: 800px" src="./img/map_02.png">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <img src="./img/i.png" style="width:100vw" alt="">
+    </div>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+
+            // 如果需要分页器
+            // pagination: '.swiper-pagination',
+
+            // 如果需要前进后退按钮
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+        })        
+    </script>
+</body>
+
+</html>
